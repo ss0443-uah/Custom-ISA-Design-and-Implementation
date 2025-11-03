@@ -1,0 +1,73 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Dec  6 16:11 2024
+time= 1600 ns, O_done=0
+time= 1680 ns, O_done=0
+time= 1760 ns, O_done=0
+time= 1840 ns, O_done=0
+time= 1920 ns, O_done=0
+time= 2000 ns, O_done=0
+time= 2080 ns, O_done=0
+time= 2160 ns, O_done=0
+time= 2240 ns, O_done=0
+time= 2320 ns, O_done=0
+time= 2400 ns, O_done=0
+time= 2480 ns, O_done=0
+time= 2560 ns, O_done=0
+time= 2640 ns, O_done=0
+time= 2720 ns, O_done=0
+time= 2800 ns, O_done=0
+time= 2880 ns, O_done=0
+time= 2960 ns, O_done=0
+time= 3040 ns, O_done=0
+time= 3120 ns, O_done=0
+time= 3200 ns, O_done=0
+time= 3280 ns, O_done=0
+time= 3360 ns, O_done=0
+time= 3440 ns, O_done=0
+time= 3520 ns, O_done=0
+time= 3600 ns, O_done=0
+time= 3680 ns, O_done=0
+time= 3760 ns, O_done=0
+time= 3840 ns, O_done=0
+time= 3920 ns, O_done=0
+time= 4000 ns, O_done=0
+time= 4080 ns, O_done=0
+time= 4160 ns, O_done=0
+time= 4240 ns, O_done=0
+time= 4320 ns, O_done=0
+time= 4400 ns, O_done=0
+time= 4480 ns, O_done=0
+time= 4560 ns, O_done=0
+time= 4640 ns, O_done=0
+time= 4720 ns, O_done=0
+time= 4800 ns, O_done=0
+time= 4880 ns, O_done=0
+time= 4960 ns, O_done=0
+time= 5040 ns, O_done=0
+time= 5120 ns, O_done=0
+time= 5200 ns, O_done=0
+time= 5280 ns, O_done=0
+time= 5360 ns, O_done=0
+time= 5440 ns, O_done=1
+time= 5520 ns, O_done=1
+time= 5600 ns, O_done=1
+time= 5680 ns, A=00ff
+time= 5760 ns, B=ff00
+Checking C=A|B
+time= 5840 ns, C=ffff
+PASS
+Checking D=C&A
+time= 5920 ns, D=00ff
+PASS
+Checking E=!A
+time= 6000 ns, E=ff00
+PASS
+$finish called from file "../../src_syn_no_always_comb/test_bench2_128words.sv", line 219.
+$finish at simulation time             60000000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 6000000000 fs
+CPU Time:      3.150 seconds;       Data structure size:   1.4Mb
+Fri Dec  6 16:11:20 2024

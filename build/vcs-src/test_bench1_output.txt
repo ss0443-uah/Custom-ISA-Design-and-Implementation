@@ -1,0 +1,65 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Dec  6 16:14 2024
+time= 1360 ns, done=0
+time= 1440 ns, done=0
+time= 1520 ns, done=0
+time= 1600 ns, done=0
+time= 1680 ns, done=0
+time= 1760 ns, done=0
+time= 1840 ns, done=0
+time= 1920 ns, done=0
+time= 2000 ns, done=0
+time= 2080 ns, done=0
+time= 2160 ns, done=0
+time= 2240 ns, done=0
+time= 2320 ns, done=0
+time= 2400 ns, done=0
+time= 2480 ns, done=0
+time= 2560 ns, done=0
+time= 2640 ns, done=0
+time= 2720 ns, done=0
+time= 2800 ns, done=0
+time= 2880 ns, done=0
+time= 2960 ns, done=0
+time= 3040 ns, done=0
+time= 3120 ns, done=0
+time= 3200 ns, done=0
+time= 3280 ns, done=0
+time= 3360 ns, done=0
+time= 3440 ns, done=0
+time= 3520 ns, done=0
+time= 3600 ns, done=0
+time= 3680 ns, done=0
+time= 3760 ns, done=0
+time= 3840 ns, done=0
+time= 3920 ns, done=0
+time= 4000 ns, done=0
+time= 4080 ns, done=0
+time= 4160 ns, done=0
+time= 4240 ns, done=0
+time= 4320 ns, done=0
+time= 4400 ns, done=0
+time= 4480 ns, done=0
+time= 4560 ns, done=0
+time= 4640 ns, done=0
+time= 4720 ns, done=1
+time= 4800 ns, done=1
+time= 4880 ns, done=1
+time= 4960 ns, done=1
+time= 5040 ns, A=               5
+time= 5120 ns, B=               7
+Checking C=A+B
+time= 5200 ns, C=              12
+PASS
+Checking D=C-A
+time= 5280 ns, D=               7
+PASS
+$finish called from file "../../src_syn_no_always_comb/test_bench1_128word.sv", line 190.
+$finish at simulation time             52800000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 5280000000 fs
+CPU Time:      0.270 seconds;       Data structure size:   0.1Mb
+Fri Dec  6 16:14:08 2024

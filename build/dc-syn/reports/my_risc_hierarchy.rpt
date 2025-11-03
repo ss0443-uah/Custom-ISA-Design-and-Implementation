@@ -1,0 +1,105 @@
+ 
+****************************************
+Report : hierarchy
+Design : my_risc
+Version: V-2023.12-SP5
+Date   : Tue Dec  3 21:08:49 2024
+****************************************
+
+my_risc
+    AND2X1                           saed90nm_max
+    AO22X1                           saed90nm_max
+    D2I1025                          saed90nm_io_max_fc
+    INVX0                            saed90nm_max
+    ISH1025                          saed90nm_io_max_fc
+    NOR2X0                           saed90nm_max
+    SRAM16x128                       SRAM16x128_max
+    control
+        AND2X1                       saed90nm_max
+        AND3X1                       saed90nm_max
+        AND4X1                       saed90nm_max
+        AO21X1                       saed90nm_max
+        AO22X1                       saed90nm_max
+        AO221X1                      saed90nm_max
+        AO222X1                      saed90nm_max
+        AOI21X1                      saed90nm_max
+        DFFSSRX1                     saed90nm_max
+        DFFX1                        saed90nm_max
+        INVX0                        saed90nm_max
+        NAND2X1                      saed90nm_max
+        NAND3X0                      saed90nm_max
+        NAND4X0                      saed90nm_max
+        NBUFFX2                      saed90nm_max
+        NOR2X0                       saed90nm_max
+        NOR3X0                       saed90nm_max
+        OA21X1                       saed90nm_max
+        OA22X1                       saed90nm_max
+        OA221X1                      saed90nm_max
+        OA222X1                      saed90nm_max
+        OAI21X1                      saed90nm_max
+        OR2X1                        saed90nm_max
+        XNOR2X1                      saed90nm_max
+        control_DW01_inc_0
+            HADDX1                   saed90nm_max
+            INVX0                    saed90nm_max
+            XOR2X1                   saed90nm_max
+    datapath
+        AND2X1                       saed90nm_max
+        AO22X1                       saed90nm_max
+        AO222X1                      saed90nm_max
+        INVX0                        saed90nm_max
+        NAND2X0                      saed90nm_max
+        NBUFFX2                      saed90nm_max
+        NOR2X0                       saed90nm_max
+        NOR3X0                       saed90nm_max
+        myAlu
+            AND2X1                   saed90nm_max
+            AND4X1                   saed90nm_max
+            AO21X1                   saed90nm_max
+            AO22X1                   saed90nm_max
+            AO221X1                  saed90nm_max
+            AO222X1                  saed90nm_max
+            AOI221X1                 saed90nm_max
+            INVX0                    saed90nm_max
+            NAND2X0                  saed90nm_max
+            NAND2X1                  saed90nm_max
+            NAND3X0                  saed90nm_max
+            NAND4X0                  saed90nm_max
+            NBUFFX2                  saed90nm_max
+            NOR2X0                   saed90nm_max
+            NOR4X0                   saed90nm_max
+            OA21X1                   saed90nm_max
+            OA22X1                   saed90nm_max
+            OA221X1                  saed90nm_max
+            OA222X1                  saed90nm_max
+            OR2X1                    saed90nm_max
+            OR4X1                    saed90nm_max
+            myAlu_DW01_add_0
+                AND2X1               saed90nm_max
+                FADDX1               saed90nm_max
+                XOR2X1               saed90nm_max
+                XOR3X1               saed90nm_max
+            myAlu_DW01_sub_0
+                FADDX1               saed90nm_max
+                INVX0                saed90nm_max
+                NAND2X0              saed90nm_max
+                XNOR3X1              saed90nm_max
+                XOR2X1               saed90nm_max
+        regbank
+            AND2X1                   saed90nm_max
+            AND3X1                   saed90nm_max
+            AO22X1                   saed90nm_max
+            AO221X1                  saed90nm_max
+            DFFX1                    saed90nm_max
+            INVX0                    saed90nm_max
+            NAND2X0                  saed90nm_max
+            NAND2X1                  saed90nm_max
+            NAND3X0                  saed90nm_max
+            NBUFFX2                  saed90nm_max
+            NOR2X0                   saed90nm_max
+            NOR3X0                   saed90nm_max
+            NOR4X0                   saed90nm_max
+            OAI22X1                  saed90nm_max
+        signExt
+            INVX0                    saed90nm_max
+1

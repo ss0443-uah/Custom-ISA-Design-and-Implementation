@@ -1,0 +1,78 @@
+****************************************
+Report : Time Based Power
+	-hierarchy
+	-verbose
+Design : my_risc
+Version: V-2023.12-SP5
+Date   : Fri Dec  6 14:40:49 2024
+****************************************
+
+Sampling Interval: 0.0001 ns
+
+Library(s) Used:
+
+    saed90nm_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+    saed90nm_io_max_fc (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm_IO/IO_Standard_Cell_Library/synopsys/models/saed90nm_io_max_fc.db)
+    SRAM16x128_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Memories/synopsys/models/SRAM16x128_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Cell               Design       Wire_model  Library       Selection_type
+--------------------------------------------------------------------------------
+                   my_risc      1000000     saed90nm_max  automatic-by-area
+cb                 control      8000        saed90nm_max  automatic-by-area
+cb/r142            control_DW01_inc_0
+                                ForQA       saed90nm_max  automatic-by-area
+dp                 datapath     35000       saed90nm_max  automatic-by-area
+dp/my_reg          regbank      35000       saed90nm_max  automatic-by-area
+dp/sign            signExt      ForQA       saed90nm_max  automatic-by-area
+dp/alu             myAlu        8000        saed90nm_max  automatic-by-area
+dp/alu/add_46      myAlu_DW01_add_0
+                                8000        saed90nm_max  automatic-by-area
+dp/alu/r78         myAlu_DW01_sub_0
+                                8000        saed90nm_max  automatic-by-area
+
+Power-specific unit information :
+    Voltage Units = 1 V
+    Capacitance Units = 0.001 pf
+    Time Units = 1 ns
+    Dynamic Power Units = 1 W
+    Leakage Power Units = 1 W
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+my_risc                                  0.410 1.07e-05 1.97e-03    0.412 100.0
+  cb (control)                        4.37e-07 3.95e-07 9.79e-06 1.06e-05   0.0
+    r142 (control_DW01_inc_0)         2.57e-08    0.000 4.61e-07 4.86e-07   0.0
+  dp (datapath)                       1.87e-08 1.00e-07 1.06e-04 1.07e-04   0.0
+    my_reg (regbank)                  1.07e-09    0.000 9.74e-05 9.74e-05   0.0
+    sign (signExt)                       0.000    0.000    0.000    0.000   N/A
+    alu (myAlu)                       1.47e-08 9.76e-08 6.23e-06 6.34e-06   0.0
+      add_46 (myAlu_DW01_add_0)          0.000    0.000 1.42e-06 1.42e-06   0.0
+      r78 (myAlu_DW01_sub_0)             0.000    0.000 1.43e-06 1.43e-06   0.0
+
+
+                                      Peak     Peak            Glitch   X-tran
+Hierarchy                             Power    Time            Power    Power
+--------------------------------------------------------------------------------
+my_risc                               1.40e+04 1760.0000-1760.0001
+                                                                  0.000 7.13e-08
+  cb (control)                        4.55e-04 7080.5740-7080.5741
+                                                                  0.000 6.13e-10
+    r142 (control_DW01_inc_0)         2.40e-05 8840.6570-8840.6571
+                                                                  0.000    0.000
+  dp (datapath)                       1.80e-04 4441.2853-4441.2854
+                                                                  0.000 7.92e-09
+    my_reg (regbank)                  1.43e-04 9640.7220-9640.7221
+                                                                  0.000    0.000
+    sign (signExt)                       0.000  0.0000-0.0001     0.000    0.000
+    alu (myAlu)                       7.81e-05 8200.9770-8200.9771
+                                                                  0.000 7.79e-09
+      add_46 (myAlu_DW01_add_0)       1.42e-06  0.0000-0.0001     0.000    0.000
+      r78 (myAlu_DW01_sub_0)          1.43e-06  0.0000-0.0001     0.000    0.000
+1

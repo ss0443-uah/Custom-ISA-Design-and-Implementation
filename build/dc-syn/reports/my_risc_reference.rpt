@@ -1,0 +1,40 @@
+ 
+****************************************
+Report : reference
+Design : my_risc
+Version: V-2023.12-SP5
+Date   : Tue Dec  3 21:08:49 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             saed90nm_max
+                                  7.372800      16    117.964798  
+AO22X1             saed90nm_max
+                                 11.980800       8     95.846397  
+D2I1025            saed90nm_io_max_fc
+                              13325.000000      17  226525.000000 d, n
+INVX0              saed90nm_max
+                                  5.529600      20    110.592003  
+ISH1025            saed90nm_io_max_fc
+                              13325.000000      28  373100.000000 d
+NOR2X0             saed90nm_max
+                                  5.529600      32    176.947205  
+SRAM16x128         SRAM16x128_max
+                              43223.316406       1  43223.316406  b, d
+control                        3252.326378       1   3252.326378  h, n
+datapath                      32546.303614       1  32546.303614  h, n
+-----------------------------------------------------------------------------
+Total 9 references                                  679148.296801
+1

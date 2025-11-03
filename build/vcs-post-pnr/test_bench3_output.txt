@@ -1,0 +1,112 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Dec  6 16:11 2024
+time= 2320 ns, O_done=0
+time= 2400 ns, O_done=0
+time= 2480 ns, O_done=0
+time= 2560 ns, O_done=0
+time= 2640 ns, O_done=0
+time= 2720 ns, O_done=0
+time= 2800 ns, O_done=0
+time= 2880 ns, O_done=0
+time= 2960 ns, O_done=0
+time= 3040 ns, O_done=0
+time= 3120 ns, O_done=0
+time= 3200 ns, O_done=0
+time= 3280 ns, O_done=0
+time= 3360 ns, O_done=0
+time= 3440 ns, O_done=0
+time= 3520 ns, O_done=0
+time= 3600 ns, O_done=0
+time= 3680 ns, O_done=0
+time= 3760 ns, O_done=0
+time= 3840 ns, O_done=0
+time= 3920 ns, O_done=0
+time= 4000 ns, O_done=0
+time= 4080 ns, O_done=0
+time= 4160 ns, O_done=0
+time= 4240 ns, O_done=0
+time= 4320 ns, O_done=0
+time= 4400 ns, O_done=0
+time= 4480 ns, O_done=0
+time= 4560 ns, O_done=0
+time= 4640 ns, O_done=0
+time= 4720 ns, O_done=0
+time= 4800 ns, O_done=0
+time= 4880 ns, O_done=0
+time= 4960 ns, O_done=0
+time= 5040 ns, O_done=0
+time= 5120 ns, O_done=0
+time= 5200 ns, O_done=0
+time= 5280 ns, O_done=0
+time= 5360 ns, O_done=0
+time= 5440 ns, O_done=0
+time= 5520 ns, O_done=0
+time= 5600 ns, O_done=0
+time= 5680 ns, O_done=0
+time= 5760 ns, O_done=0
+time= 5840 ns, O_done=0
+time= 5920 ns, O_done=0
+time= 6000 ns, O_done=0
+time= 6080 ns, O_done=0
+time= 6160 ns, O_done=0
+time= 6240 ns, O_done=0
+time= 6320 ns, O_done=0
+time= 6400 ns, O_done=0
+time= 6480 ns, O_done=0
+time= 6560 ns, O_done=0
+time= 6640 ns, O_done=0
+time= 6720 ns, O_done=0
+time= 6800 ns, O_done=0
+time= 6880 ns, O_done=0
+time= 6960 ns, O_done=0
+time= 7040 ns, O_done=0
+time= 7120 ns, O_done=0
+time= 7200 ns, O_done=0
+time= 7280 ns, O_done=0
+time= 7360 ns, O_done=0
+time= 7440 ns, O_done=0
+time= 7520 ns, O_done=0
+time= 7600 ns, O_done=0
+time= 7680 ns, O_done=0
+time= 7760 ns, O_done=0
+time= 7840 ns, O_done=0
+time= 7920 ns, O_done=0
+time= 8000 ns, O_done=0
+time= 8080 ns, O_done=0
+time= 8160 ns, O_done=0
+time= 8240 ns, O_done=0
+time= 8320 ns, O_done=0
+time= 8400 ns, O_done=0
+time= 8480 ns, O_done=0
+time= 8560 ns, O_done=0
+time= 8640 ns, O_done=0
+time= 8720 ns, O_done=0
+time= 8800 ns, O_done=0
+time= 8880 ns, O_done=0
+time= 8960 ns, O_done=0
+time= 9040 ns, O_done=0
+time= 9120 ns, O_done=0
+time= 9200 ns, O_done=0
+time= 9280 ns, O_done=0
+time= 9360 ns, O_done=0
+time= 9440 ns, O_done=0
+time= 9520 ns, O_done=0
+time= 9600 ns, O_done=0
+time= 9680 ns, O_done=1
+time= 9760 ns, O_done=1
+time= 9840 ns, O_done=1
+time= 9920 ns, O_done=1
+time=10000 ns, A=               3
+time=10080 ns, B=              12
+Checking C=B/A
+time=10160 ns, C=               4
+PASS
+$finish called from file "../../src_syn_no_always_comb/test_bench3_128words.sv", line 318.
+$finish at simulation time            101600000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10160000000 fs
+CPU Time:      3.190 seconds;       Data structure size:   1.4Mb
+Fri Dec  6 16:11:30 2024

@@ -1,0 +1,64 @@
+Loading db file '/apps/designlib/SAED90_EDK/SAED_EDK90nm_IO/IO_Standard_Cell_Library/synopsys/models/saed90nm_io_max_fc.db'
+Loading db file '/apps/designlib/SAED90_EDK/SAED_EDK90nm/Memories/synopsys/models/SRAM16x128_max.db'
+Loading db file '/apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : my_risc
+Version: V-2023.12-SP5
+Date   : Tue Dec  3 21:08:49 2024
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+    SRAM16x128_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Memories/synopsys/models/SRAM16x128_max.db)
+    saed90nm_io_max_fc (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm_IO/IO_Standard_Cell_Library/synopsys/models/saed90nm_io_max_fc.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+my_risc                1000000           saed90nm_max
+control                8000              saed90nm_max
+datapath               35000             saed90nm_max
+regbank                35000             saed90nm_max
+myAlu                  8000              saed90nm_max
+signExt                ForQA             saed90nm_max
+myAlu_DW01_add_0       8000              saed90nm_max
+myAlu_DW01_sub_0       8000              saed90nm_max
+control_DW01_inc_0     ForQA             saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+my_risc                                   2.143 1.14e+05 1.96e+09 1.16e+05 100.0
+  dp (datapath)                           0.247    0.463 1.11e+08  111.900   0.1
+    sign (signExt)                     1.84e-03 6.07e-04 2.13e+04 2.37e-02   0.0
+    alu (myAlu)                        5.44e-02    0.146 8.29e+06    8.494   0.0
+      r78 (myAlu_DW01_sub_0)           2.86e-02 5.44e-02 1.74e+06    1.826   0.0
+      add_46 (myAlu_DW01_add_0)        6.57e-03 5.32e-02 1.45e+06    1.506   0.0
+    my_reg (regbank)                      0.142    0.255 9.90e+07   99.361   0.1
+  cb (control)                         7.78e-02    0.147 1.07e+07   10.938   0.0
+    r142 (control_DW01_inc_0)          7.74e-04 2.93e-03 4.63e+05    0.467   0.0
+1
